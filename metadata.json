@@ -1,0 +1,6 @@
+{
+  "name": "ASEING - Consultoría Industrial y Pasarela de Pagos",
+  "description": "Plataforma de asesoría industrial y gestión de negocios de ASEING, planificación y control de producción (PCP), costeo e implementación de normas ISO 9001:2026, ISO 14001:2026 y ISO 45001.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

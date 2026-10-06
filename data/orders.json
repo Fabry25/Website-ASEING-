@@ -1,0 +1,412 @@
+[
+  {
+    "id": "order-demo-1",
+    "orderNumber": "ASE-2026-1042",
+    "createdAt": "2026-09-18T02:27:00.757Z",
+    "billingInfo": {
+      "companyName": "Industrias Andina S.A.",
+      "legalRepresentative": "Ing. Carlos Mendoza",
+      "rucOrId": "1792348592001",
+      "email": "operaciones@andina.ec",
+      "phone": "+593 99 876 5432",
+      "city": "Ambato",
+      "address": "Parque Industrial Calle B, Lote 14",
+      "industrySector": "Manufactura y Calzado",
+      "employeesCount": "45"
+    },
+    "items": [
+      {
+        "serviceId": "paquete-iso-trinorma",
+        "serviceTitle": "Paquete Trinorma Integrado (ISO 9001 + 14001 + 45001)",
+        "unitPrice": 3960,
+        "quantity": 1,
+        "subtotal": 3960
+      }
+    ],
+    "subtotal": 3960,
+    "discountAmount": 640,
+    "taxAmount": 594,
+    "total": 4554,
+    "paymentMethod": "payphone",
+    "paymentStatus": "approved",
+    "paymentReference": "PAYP-REF-983271",
+    "transactionId": "TX-772910384",
+    "payphoneReceiptToken": "PPH-TOKEN-892147",
+    "notes": "Contratación de paquete integral de certificación trinorma.",
+    "onboardingStep": "audit_scheduled",
+    "scheduledAuditDate": "2026-09-24 09:30"
+  },
+  {
+    "id": "order-demo-auditoria",
+    "orderNumber": "ASE-2026-4401",
+    "createdAt": "2026-09-18T14:27:00.757Z",
+    "billingInfo": {
+      "companyName": "Manufacturas Metalmecánicas del Austro Cía. Ltda.",
+      "legalRepresentative": "Ing. Roberto Santamaría",
+      "rucOrId": "0190345678001",
+      "email": "operaciones@metalmecanica.ec",
+      "phone": "+593 98 466 1214",
+      "city": "Cuenca",
+      "address": "Parque Industrial Calle Las Herrerías 4-12",
+      "industrySector": "Metalmecánica y Estructuras",
+      "employeesCount": "35"
+    },
+    "items": [
+      {
+        "serviceId": "auditoria-interna",
+        "serviceTitle": "Auditoría Interna y Pre-Auditoría de Certificación",
+        "unitPrice": 440,
+        "quantity": 1,
+        "subtotal": 440
+      }
+    ],
+    "subtotal": 440,
+    "discountAmount": 0,
+    "taxAmount": 66,
+    "total": 506,
+    "paymentMethod": "payphone",
+    "paymentStatus": "approved",
+    "paymentReference": "PAYP-REF-440912",
+    "transactionId": "TX-440192834",
+    "payphoneReceiptToken": "PPH-TOKEN-440562",
+    "notes": "Auditoría interna rigurosa previa a inspección de organismo certificador acreditado.",
+    "onboardingStep": "audit_scheduled",
+    "scheduledAuditDate": "2026-09-29 09:30"
+  },
+  {
+    "id": "order-demo-app-compra",
+    "orderNumber": "ASE-2026-2501",
+    "createdAt": "2026-09-18T19:30:20.757Z",
+    "billingInfo": {
+      "companyName": "Alimentos Procesados Tungurahua S.A.",
+      "legalRepresentative": "Leda. María Elena Morales",
+      "rucOrId": "1891238475001",
+      "email": "produccion@alimentostungurahua.ec",
+      "phone": "+593 98 466 1214",
+      "city": "Ambato",
+      "address": "Av. Indoamérica Km 4 1/2 y Los Sauces",
+      "industrySector": "Agroindustria y Conservas",
+      "employeesCount": "50"
+    },
+    "items": [
+      {
+        "serviceId": "app-planificacion",
+        "serviceTitle": "App de Planificación de Producción ASEING (Compra de App)",
+        "unitPrice": 250,
+        "quantity": 1,
+        "subtotal": 250
+      }
+    ],
+    "subtotal": 250,
+    "discountAmount": 0,
+    "taxAmount": 37.5,
+    "total": 287.5,
+    "paymentMethod": "payphone",
+    "paymentStatus": "approved",
+    "paymentReference": "PAYP-REF-250819",
+    "transactionId": "TX-250198421",
+    "payphoneReceiptToken": "PPH-TOKEN-250781",
+    "notes": "Adquisición definitiva de la aplicación de producción ASEING para planta industrial. Código y despliegue.",
+    "onboardingStep": "audit_scheduled",
+    "scheduledAuditDate": "2026-09-25 10:00"
+  },
+  {
+    "id": "order-demo-app-licencia",
+    "orderNumber": "ASE-2026-3001",
+    "createdAt": "2026-09-18T22:17:00.757Z",
+    "billingInfo": {
+      "companyName": "Calzados y Cuero del Centro Cía. Ltda.",
+      "legalRepresentative": "Sr. Patricio Villacís",
+      "rucOrId": "1890456123001",
+      "email": "gerencia@calzadoscentro.ec",
+      "phone": "+593 99 876 5432",
+      "city": "Cevallos",
+      "address": "Calle 24 de Mayo y 10 de Agosto",
+      "industrySector": "Manufactura de Calzado",
+      "employeesCount": "22"
+    },
+    "items": [
+      {
+        "serviceId": "app-planificacion-mensual",
+        "serviceTitle": "App de Planificación de Producción ASEING (Licencia Mensual)",
+        "unitPrice": 30,
+        "quantity": 1,
+        "subtotal": 30
+      }
+    ],
+    "subtotal": 30,
+    "discountAmount": 0,
+    "taxAmount": 4.5,
+    "total": 34.5,
+    "paymentMethod": "bank_transfer",
+    "paymentStatus": "approved",
+    "paymentReference": "TRANSF-PROD-300941",
+    "transactionId": "TX-300195820",
+    "payphoneReceiptToken": "",
+    "notes": "Suscripción a Licencia mensual de la App de Planificación ASEING ($30/mes).",
+    "onboardingStep": "audit_scheduled",
+    "scheduledAuditDate": "2026-09-26 11:00"
+  },
+  {
+    "id": "order-demo-pcp-unico",
+    "orderNumber": "ASE-2026-3801",
+    "createdAt": "2026-09-18T10:30:00.000Z",
+    "billingInfo": {
+      "companyName": "Manufacturas Metálicas del Austro Cía. Ltda.",
+      "legalRepresentative": "Ing. Carlos M. Benalcázar",
+      "rucOrId": "0190345678001",
+      "email": "carlos.benalcazar@metalicaustro.com.ec",
+      "phone": "+593 99 765 4321",
+      "city": "Cuenca",
+      "address": "Parque Industrial El Salado, Calle 3",
+      "industrySector": "Metalmecánica y Fabricación",
+      "employeesCount": "38"
+    },
+    "items": [
+      {
+        "serviceId": "planificacion-control",
+        "serviceTitle": "Planificación y Control de la Producción (PCP) - Pago Único",
+        "unitPrice": 380,
+        "quantity": 1,
+        "subtotal": 380
+      },
+      {
+        "serviceId": "diagnostico-inicial",
+        "serviceTitle": "Diagnóstico inicial de Procesos Productivos (100% Bonificado por Catálogo)",
+        "unitPrice": 30,
+        "quantity": 1,
+        "subtotal": 0
+      }
+    ],
+    "subtotal": 380,
+    "discountAmount": 30,
+    "taxAmount": 57,
+    "total": 437,
+    "paymentMethod": "bank_transfer",
+    "paymentStatus": "approved",
+    "paymentReference": "TRANSF-PROD-380104",
+    "transactionId": "TX-380194827",
+    "payphoneReceiptToken": "REC-ASE-380199",
+    "notes": "Contratación de Planificación y Control de la Producción (PCP) en modalidad Pago Único ($380 USD). Bonificación al 100% de Diagnóstico Inicial de Procesos Productivos ($30 USD).",
+    "onboardingStep": "audit_scheduled",
+    "scheduledAuditDate": "2026-09-29 09:30"
+  },
+  {
+    "id": "order-1790186466663",
+    "orderNumber": "ASE-2026-9566",
+    "createdAt": "2026-09-23T18:01:06.663Z",
+    "billingInfo": {
+      "companyName": "Eneergy",
+      "legalRepresentative": "",
+      "rucOrId": "1803227857",
+      "email": "aseingenergy@gmail.com",
+      "phone": "0999239962",
+      "city": "Ambato",
+      "address": "Av. Imbabura",
+      "industrySector": "Manufactura",
+      "employeesCount": "15-50"
+    },
+    "items": [
+      {
+        "serviceId": "diagnostico-inicial",
+        "serviceTitle": "Diagnóstico Inicial de Procesos Productivos",
+        "unitPrice": 30,
+        "quantity": 1,
+        "subtotal": 30
+      }
+    ],
+    "subtotal": 30,
+    "discountAmount": 0,
+    "taxAmount": 4.5,
+    "total": 34.5,
+    "paymentMethod": "payphone",
+    "paymentStatus": "approved",
+    "onboardingStep": "audit_scheduled",
+    "scheduledAuditDate": "2026-09-22 09:30",
+    "notes": "",
+    "paymentModality": "full",
+    "amountPaidToday": 34.5,
+    "pendingBalance": 0,
+    "pendingBalanceBase": 0,
+    "pendingBalanceTax": 0,
+    "payphoneReceiptToken": "REC-ASE-6255463",
+    "transactionId": "TX-PPH-86466866",
+    "paymentReference": "PPH-904492"
+  },
+  {
+    "id": "order-1790186789558",
+    "orderNumber": "ASE-2026-1716",
+    "createdAt": "2026-09-23T18:06:29.558Z",
+    "billingInfo": {
+      "companyName": "Energy",
+      "legalRepresentative": "",
+      "rucOrId": "1803227857",
+      "email": "aseingenergy@gmail.com",
+      "phone": "0999239962",
+      "city": "Ambato",
+      "address": "Av. Imbabura",
+      "industrySector": "Manufactura",
+      "employeesCount": "15-50"
+    },
+    "items": [
+      {
+        "serviceId": "diagnostico-inicial",
+        "serviceTitle": "Diagnóstico Inicial de Procesos Productivos",
+        "unitPrice": 30,
+        "quantity": 1,
+        "subtotal": 30
+      }
+    ],
+    "subtotal": 30,
+    "discountAmount": 0,
+    "taxAmount": 4.5,
+    "total": 34.5,
+    "paymentMethod": "payphone",
+    "paymentStatus": "approved",
+    "onboardingStep": "audit_scheduled",
+    "scheduledAuditDate": "2026-09-22 09:30",
+    "notes": "",
+    "paymentModality": "full",
+    "amountPaidToday": 34.5,
+    "pendingBalance": 0,
+    "pendingBalanceBase": 0,
+    "pendingBalanceTax": 0,
+    "payphoneReceiptToken": "REC-ASE-1196185",
+    "transactionId": "TX-PPH-86789780",
+    "paymentReference": "PPH-981562"
+  },
+  {
+    "id": "order-1790191047355",
+    "orderNumber": "ASE-2026-7722",
+    "createdAt": "2026-09-23T19:17:27.355Z",
+    "billingInfo": {
+      "companyName": "Industrias Ambato S.A.",
+      "rucOrId": "1890123456001",
+      "email": "test@empresa.com",
+      "phone": "0984661214",
+      "address": "Av. Cevallos y Montalvo",
+      "city": "Ambato"
+    },
+    "items": [
+      {
+        "serviceId": "seguridad-industrial",
+        "serviceTitle": "Auditoría Integral de Seguridad y Salud en el Trabajo",
+        "category": "Seguridad Industrial",
+        "basePrice": 1200,
+        "discountPercent": 0,
+        "taxRate": 0.15,
+        "quantity": 1,
+        "subtotal": 1200
+      }
+    ],
+    "subtotal": 1200,
+    "discountAmount": 0,
+    "taxAmount": 180,
+    "total": 1380,
+    "paymentMethod": "bank_transfer",
+    "paymentStatus": "approved",
+    "onboardingStep": "audit_scheduled",
+    "scheduledAuditDate": "2026-09-28 09:30",
+    "notes": "",
+    "paymentModality": "full",
+    "amountPaidToday": 1380,
+    "pendingBalance": 0,
+    "pendingBalanceBase": 0,
+    "pendingBalanceTax": 0,
+    "paymentReference": "PROD-1892837",
+    "transactionId": "TX-PEND-91052596",
+    "transferProof": {
+      "reference": "PROD-1892837",
+      "filename": "comprobante_banco.jpg"
+    },
+    "payphoneReceiptToken": "REC-TRANSF-1651593"
+  },
+  {
+    "id": "order-1790191090567",
+    "orderNumber": "ASE-2026-7105",
+    "createdAt": "2026-09-23T19:18:10.567Z",
+    "billingInfo": {
+      "companyName": "Fabril Textil Ambato Cía. Ltda.",
+      "rucOrId": "1890333444001",
+      "email": "contabilidad@fabril.com",
+      "phone": "0984661214",
+      "address": "Parque Industrial Ambato",
+      "city": "Ambato"
+    },
+    "items": [
+      {
+        "serviceId": "planificacion-control",
+        "serviceTitle": "Planificación y Control de Producción Industrial",
+        "category": "Gestión de Producción",
+        "basePrice": 1200,
+        "discountPercent": 0,
+        "taxRate": 0.15,
+        "quantity": 1,
+        "subtotal": 1200
+      }
+    ],
+    "subtotal": 1200,
+    "discountAmount": 0,
+    "taxAmount": 180,
+    "total": 1380,
+    "paymentMethod": "payphone",
+    "paymentStatus": "approved",
+    "onboardingStep": "audit_scheduled",
+    "scheduledAuditDate": "2026-09-28 09:30",
+    "notes": "",
+    "paymentModality": "full",
+    "amountPaidToday": 1380,
+    "pendingBalance": 0,
+    "pendingBalanceBase": 0,
+    "pendingBalanceTax": 0,
+    "payphoneReceiptToken": "REC-ASE-6515571",
+    "transactionId": "TX-PPH-91094113",
+    "paymentReference": "PPH-671634"
+  },
+  {
+    "id": "order-1790191101023",
+    "orderNumber": "ASE-2026-4043",
+    "createdAt": "2026-09-23T19:18:21.023Z",
+    "billingInfo": {
+      "companyName": "Corporación Minera del Centro",
+      "rucOrId": "1890888999001",
+      "email": "compras@minera.com",
+      "phone": "0984661214",
+      "address": "Av. Indoamérica Km 4",
+      "city": "Ambato"
+    },
+    "items": [
+      {
+        "serviceId": "auditoria-ambiental",
+        "serviceTitle": "Auditoría de Cumplimiento Ambiental y Gestión de Residuos",
+        "category": "Gestión Ambiental",
+        "basePrice": 1200,
+        "discountPercent": 0,
+        "taxRate": 0.15,
+        "quantity": 1,
+        "subtotal": 1200
+      }
+    ],
+    "subtotal": 1200,
+    "discountAmount": 0,
+    "taxAmount": 180,
+    "total": 1380,
+    "paymentMethod": "bank_transfer",
+    "paymentStatus": "approved",
+    "onboardingStep": "audit_scheduled",
+    "scheduledAuditDate": "2026-09-28 09:30",
+    "notes": "",
+    "paymentModality": "full",
+    "amountPaidToday": 1380,
+    "pendingBalance": 0,
+    "pendingBalanceBase": 0,
+    "pendingBalanceTax": 0,
+    "paymentReference": "PROD-4043-9871",
+    "transactionId": "TX-PEND-91102854",
+    "transferProof": {
+      "reference": "PROD-4043-9871",
+      "filename": "deposito_produbanco.png"
+    },
+    "payphoneReceiptToken": "REC-TRANSF-2215370"
+  }
+]

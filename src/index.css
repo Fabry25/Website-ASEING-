@@ -1,0 +1,303 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #0f041d;
+    --bg-card: #18082e;
+    --bg-surface: #220d3f;
+    --border-color: rgba(243, 239, 250, 0.12);
+    --text-main: #f3effa;
+    --text-muted: #bfa9dc;
+    --accent-turq: #1ea1c2;
+    --accent-pink: #b80068;
+    --accent-royal: #3a0ca3;
+    --accent-indigo: #4e0477;
+  }
+
+  .day-mode {
+    --bg-main: #ffffff;
+    --bg-card: #f8f6fc;
+    --bg-surface: #ede6f5;
+    --border-color: rgba(30, 3, 56, 0.14);
+    --text-main: #1e0338;
+    --text-muted: #5a4b73;
+  }
+
+  /* ========================================================================= */
+  /* MODERN HIGH-CONTRAST THEME (PRUEBA DE ALTO CONTRASTE MODERNO)              */
+  /* ========================================================================= */
+  .high-contrast-mode {
+    --bg-main: #060608;
+    --bg-card: #0f0f14;
+    --bg-surface: #171720;
+    --border-color: rgba(255, 255, 255, 0.28);
+    --text-main: #ffffff;
+    --text-muted: #e4e4e7;
+    --accent-turq: #00f0ff;
+    --accent-pink: #ff1379;
+    --accent-royal: #2563eb;
+    --accent-indigo: #4f46e5;
+  }
+
+  .high-contrast-mode.day-mode,
+  .high-contrast-mode .day-mode {
+    --bg-main: #ffffff;
+    --bg-card: #f4f4f5;
+    --bg-surface: #e4e4e7;
+    --border-color: #18181b;
+    --text-main: #09090b;
+    --text-muted: #18181b;
+    --accent-turq: #0284c7;
+    --accent-pink: #be123c;
+    --accent-royal: #1d4ed8;
+    --accent-indigo: #4338ca;
+  }
+
+  /* High-Contrast: Header & Navigation */
+  .high-contrast-mode header#main-header {
+    background-color: rgba(6, 6, 8, 0.94) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.8) !important;
+  }
+
+  .high-contrast-mode.day-mode header#main-header {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-bottom: 2px solid #09090b !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  }
+
+  /* High-Contrast: Universal Card Sharpness */
+  .high-contrast-mode [id^="service-card-"],
+  .high-contrast-mode .bg-\[\#18082e\],
+  .high-contrast-mode .bg-\[\#120325\],
+  .high-contrast-mode .bg-\[\#100424\] {
+    background-color: #0f0f14 !important;
+    border-color: rgba(255, 255, 255, 0.22) !important;
+  }
+
+  .high-contrast-mode [id^="service-card-"]:hover {
+    border-color: #00f0ff !important;
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.15) !important;
+  }
+
+  .high-contrast-mode.day-mode [id^="service-card-"],
+  .high-contrast-mode.day-mode .bg-\[\#18082e\],
+  .high-contrast-mode.day-mode .bg-\[\#120325\],
+  .high-contrast-mode.day-mode .bg-\[\#100424\] {
+    background-color: #ffffff !important;
+    border-color: #18181b !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06) !important;
+  }
+
+  .high-contrast-mode.day-mode [id^="service-card-"]:hover {
+    border-color: #0284c7 !important;
+    box-shadow: 0 0 20px rgba(2, 132, 199, 0.15) !important;
+  }
+
+  /* High-Contrast: Text Sharpness & WCAG AAA Contrast */
+  .high-contrast-mode p,
+  .high-contrast-mode span.text-\[\#bfa9dc\],
+  .high-contrast-mode .text-\[\#bfa9dc\] {
+    color: #e4e4e7 !important;
+  }
+
+  .high-contrast-mode h1,
+  .high-contrast-mode h2,
+  .high-contrast-mode h3,
+  .high-contrast-mode h4 {
+    color: #ffffff !important;
+    letter-spacing: -0.02em;
+  }
+
+  .high-contrast-mode.day-mode p,
+  .high-contrast-mode.day-mode span.text-\[\#bfa9dc\],
+  .high-contrast-mode.day-mode .text-\[\#bfa9dc\],
+  .high-contrast-mode.day-mode .text-\[\#5a4b73\] {
+    color: #18181b !important;
+    font-weight: 500;
+  }
+
+  .high-contrast-mode.day-mode h1,
+  .high-contrast-mode.day-mode h2,
+  .high-contrast-mode.day-mode h3,
+  .high-contrast-mode.day-mode h4 {
+    color: #09090b !important;
+  }
+
+  .high-contrast-mode .hero-contrast-text {
+    color: #ffffff !important;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8) !important;
+  }
+
+  .high-contrast-mode.day-mode .hero-contrast-text {
+    color: #09090b !important;
+    text-shadow: none !important;
+  }
+
+  /* High-Contrast: Buttons & Interactive Controls */
+  .high-contrast-mode .border-white\/10,
+  .high-contrast-mode .border-white\/15,
+  .high-contrast-mode .border-white\/20,
+  .high-contrast-mode .border-white\/5 {
+    border-color: rgba(255, 255, 255, 0.28) !important;
+  }
+
+  .high-contrast-mode.day-mode .border-white\/10,
+  .high-contrast-mode.day-mode .border-white\/15,
+  .high-contrast-mode.day-mode .border-purple-950\/10,
+  .high-contrast-mode.day-mode .border-purple-950\/15 {
+    border-color: #18181b !important;
+  }
+
+  .high-contrast-mode button:focus-visible,
+  .high-contrast-mode a:focus-visible,
+  .high-contrast-mode input:focus-visible {
+    outline: 2px solid #00f0ff !important;
+    outline-offset: 2px !important;
+  }
+
+  /* High-Contrast: Crisp Badges and Tags */
+  .high-contrast-mode .bg-white\/5,
+  .high-contrast-mode .bg-white\/10 {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.25) !important;
+  }
+
+  .high-contrast-mode.day-mode .bg-white\/5,
+  .high-contrast-mode.day-mode .bg-black\/5 {
+    background-color: #f4f4f5 !important;
+    border-color: #18181b !important;
+  }
+
+  /* High-Contrast: Logo Container Framing */
+  .high-contrast-mode header#main-header .bg-white,
+  .high-contrast-mode footer .bg-white {
+    background-color: #ffffff !important;
+    border: 2px solid #00f0ff !important;
+    box-shadow: 0 0 16px rgba(0, 240, 255, 0.25) !important;
+  }
+
+  .high-contrast-mode.day-mode header#main-header .bg-white,
+  .high-contrast-mode.day-mode footer .bg-white {
+    background-color: #ffffff !important;
+    border: 2px solid #09090b !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12) !important;
+  }
+
+  /* High-Contrast: Modals & Dialogs */
+  .high-contrast-mode .fixed.inset-0 .rounded-2xl {
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9) !important;
+  }
+
+  .high-contrast-mode.day-mode .fixed.inset-0 .rounded-2xl {
+    border: 2px solid #09090b !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18) !important;
+  }
+
+  /* High-Contrast: Pricing Cards & Checkout */
+  .high-contrast-mode #precios .rounded-2xl,
+  .high-contrast-mode #diagnostico .rounded-2xl,
+  .high-contrast-mode #iso .rounded-2xl {
+    border-color: rgba(255, 255, 255, 0.25) !important;
+  }
+
+  .high-contrast-mode.day-mode #precios .rounded-2xl,
+  .high-contrast-mode.day-mode #diagnostico .rounded-2xl,
+  .high-contrast-mode.day-mode #iso .rounded-2xl {
+    border-color: #18181b !important;
+  }
+
+  .day-mode .hero-contrast-text {
+    color: #1e0338 !important;
+  }
+
+  /* FAQ Accordion High-Contrast Day Mode */
+  .day-mode #faq {
+    border-top-color: rgba(30, 3, 56, 0.15);
+  }
+
+  .day-mode #faq h3 {
+    color: #1e0338 !important;
+  }
+
+  .day-mode #faq p {
+    color: #5a4b73 !important;
+  }
+
+  .day-mode #faq details {
+    background-color: #ffffff !important;
+    border-color: rgba(30, 3, 56, 0.15) !important;
+    box-shadow: 0 2px 8px rgba(30, 3, 56, 0.05) !important;
+  }
+
+  .day-mode #faq details:hover {
+    border-color: #1ea1c2 !important;
+  }
+
+  .day-mode #faq details[open] {
+    background-color: #fbf9fe !important;
+    border-color: rgba(30, 161, 194, 0.6) !important;
+  }
+
+  .day-mode #faq details summary {
+    color: #1e0338 !important;
+  }
+
+  .day-mode #faq details summary .faq-question-text {
+    color: #1e0338 !important;
+  }
+
+  .day-mode #faq details summary:hover .faq-question-text {
+    color: #0b6a82 !important;
+  }
+
+  .day-mode #faq details .faq-answer {
+    color: #321f47 !important;
+    border-top-color: rgba(30, 3, 56, 0.12) !important;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom animations and print styling */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-receipt, #printable-receipt * {
+    visibility: visible;
+  }
+  #printable-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 24px;
+    background: #ffffff !important;
+    color: #1a1a1a !important;
+  }
+  #printable-receipt * {
+    color: #1a1a1a !important;
+    background-color: transparent !important;
+    border-color: #d1d5db !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+  #printable-receipt button,
+  #printable-receipt a,
+  #printable-receipt form {
+    display: none !important;
+  }
+}
