@@ -206,13 +206,13 @@ export const Hero: React.FC<HeroProps> = ({ onStartDiagnosis, onGoToPricing }) =
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
-              <span className="text-white [.day-mode_&]:text-[#1e0338] hero-contrast-text transition-colors duration-300">
+              <span className="text-white [.day-mode_&]:text-[#1e0338] transition-colors duration-300">
                 Controlamos cada{' '}
               </span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1ea1c2] via-[#3c65cd] to-[#b80068]">
                 tiempo, costo y proceso
               </span>{' '}
-              <span className="text-white [.day-mode_&]:text-[#1e0338] hero-contrast-text transition-colors duration-300">
+              <span className="text-white [.day-mode_&]:text-[#1e0338] transition-colors duration-300">
                 de su producción.
               </span>
             </h1>

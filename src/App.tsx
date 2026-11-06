@@ -87,35 +87,13 @@ export default function App() {
     }
   };
 
-  // Modern High-Contrast Theme Test Mode
-  // Default to true as requested: "Solo quiero una prueba para ver si me gusta y después confirmar cambios"
-  const [isHighContrast, setIsHighContrast] = useState<boolean>(() => {
-    try {
-      const stored = localStorage.getItem('aseing_high_contrast_theme');
-      if (stored !== null) {
-        return stored === 'true';
-      }
-      return true; // Active for test by default
-    } catch (_) {
-      return true;
-    }
-  });
-
-  // Synchronize high-contrast class on document element
+  // Permanently clean up any remaining high-contrast settings or legacy localStorage flags
   useEffect(() => {
-    if (isHighContrast) {
-      document.documentElement.classList.add('high-contrast-mode');
-    } else {
-      document.documentElement.classList.remove('high-contrast-mode');
-    }
     try {
-      localStorage.setItem('aseing_high_contrast_theme', String(isHighContrast));
+      localStorage.removeItem('aseing_high_contrast_theme');
+      document.documentElement.classList.remove('high-contrast-mode');
     } catch (_) {}
-  }, [isHighContrast]);
-
-  const handleToggleHighContrast = () => {
-    setIsHighContrast((prev) => !prev);
-  };
+  }, []);
 
   // Synchronize day-mode class on document element
   useEffect(() => {
@@ -194,8 +172,6 @@ export default function App() {
         onOpenLogoManager={() => setIsLogoModalOpen(true)}
         isDayMode={isDayMode}
         onToggleTheme={toggleTheme}
-        isHighContrast={isHighContrast}
-        onToggleHighContrast={handleToggleHighContrast}
       />
 
       {/* Hero Section */}

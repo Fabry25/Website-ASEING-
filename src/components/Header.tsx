@@ -10,8 +10,6 @@ interface HeaderProps {
   onOpenLogoManager?: () => void;
   isDayMode: boolean;
   onToggleTheme: () => void;
-  isHighContrast?: boolean;
-  onToggleHighContrast?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -21,9 +19,7 @@ export const Header: React.FC<HeaderProps> = ({
   onOpenRegisterModal,
   onOpenLogoManager,
   isDayMode,
-  onToggleTheme,
-  isHighContrast = false,
-  onToggleHighContrast
+  onToggleTheme
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -105,26 +101,6 @@ export const Header: React.FC<HeaderProps> = ({
             >
               {isDayMode ? <Moon size={17} className="text-[#3a0ca3]" /> : <Sun size={17} className="text-amber-400" />}
             </button>
-
-            {/* High Contrast Mode Quick Toggle */}
-            {onToggleHighContrast && (
-              <button
-                id="btn-high-contrast-toggle"
-                type="button"
-                onClick={onToggleHighContrast}
-                className={`hidden md:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border text-xs font-bold transition-all cursor-pointer shrink-0 ${
-                  isHighContrast
-                    ? 'bg-[#00f0ff] border-[#00f0ff] text-black shadow-md shadow-[#00f0ff]/25'
-                    : isDayMode
-                    ? 'border-zinc-300 text-zinc-800 bg-black/5 hover:border-black'
-                    : 'border-white/20 text-[#e4e4e7] hover:text-white hover:border-[#00f0ff]/50'
-                }`}
-                title={isHighContrast ? 'Desactivar prueba de alto contraste' : 'Activar prueba de tema moderno de alto contraste'}
-              >
-                <span className={`w-2 h-2 rounded-full ${isHighContrast ? 'bg-black animate-pulse' : 'bg-[#00f0ff]'}`} />
-                <span>{isHighContrast ? 'Alto Contraste: ON' : 'Alto Contraste'}</span>
-              </button>
-            )}
 
             {/* Portal Order Search */}
             <button
