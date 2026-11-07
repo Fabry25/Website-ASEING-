@@ -381,7 +381,7 @@ export const ErpDemoModal: React.FC<ErpDemoModalProps> = ({
                       className="px-3 py-1.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs shadow-md transition-all cursor-pointer flex items-center gap-1.5"
                     >
                       <Sparkles size={13} />
-                      <span>Comprar App ($4.300)</span>
+                      <span>Comprar App ($2,895.65)</span>
                     </button>
 
                     <button

@@ -170,16 +170,16 @@ const appCompraOrder: StoredOrder = {
   items: [
     {
       serviceId: "app-planificacion",
-      serviceTitle: "App de Planificación de Producción ASEING (Compra de App)",
-      unitPrice: 250,
+      serviceTitle: "App Web de Planificación y Control de Producción Product Track ASEING (Compra de App)",
+      unitPrice: 2895.65,
       quantity: 1,
-      subtotal: 250
+      subtotal: 2895.65
     }
   ],
-  subtotal: 250,
+  subtotal: 2895.65,
   discountAmount: 0,
-  taxAmount: 37.5, // 15% IVA Ecuador
-  total: 287.5,
+  taxAmount: 434.35, // 15% IVA Ecuador
+  total: 3330.00,
   paymentMethod: "payphone",
   paymentStatus: "approved",
   paymentReference: "PAYP-REF-250819",

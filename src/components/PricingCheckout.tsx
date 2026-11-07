@@ -923,7 +923,7 @@ export const PricingCheckout: React.FC<PricingCheckoutProps> = ({
                       ) : item.id === 'app-planificacion' ? (
                         <div>
                           <div className="text-sm sm:text-base font-bold font-mono text-white">
-                            USD $4.300
+                            USD $2,895.65
                           </div>
                           <span className="text-[10px] font-mono text-[#bfa9dc] block">
                             (Pago Único)
@@ -1095,7 +1095,7 @@ export const PricingCheckout: React.FC<PricingCheckoutProps> = ({
                                 </span>
                               </div>
                             ) : item.id === 'app-planificacion' ? (
-                              <span className="font-mono text-white font-bold">USD $4.300</span>
+                              <span className="font-mono text-white font-bold">USD $2,895.65</span>
                             ) : (
                               <span className="font-mono text-white font-bold">USD ${item.price}</span>
                             )}
@@ -1252,7 +1252,7 @@ export const PricingCheckout: React.FC<PricingCheckoutProps> = ({
                     <div className="space-y-1.5 pt-3 border-t border-white/10 text-xs font-mono">
                       <div className="flex justify-between text-[#bfa9dc]">
                         <span>Subtotal Servicios Base:</span>
-                        <span>USD ${rawSubtotal.toFixed(2)}</span>
+                        <span>USD ${rawSubtotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
                       </div>
                       {isDiagnosticWaived && (
                         <div className="flex justify-between text-emerald-400 font-sans">
@@ -1263,20 +1263,20 @@ export const PricingCheckout: React.FC<PricingCheckoutProps> = ({
                       {isoDiscountAmount > 0 && (
                         <div className="flex justify-between text-pink-300 font-sans">
                           <span>Descuento Trinorma (18% OFF):</span>
-                          <span className="font-mono">- USD ${isoDiscountAmount.toFixed(2)}</span>
+                          <span className="font-mono">- USD ${isoDiscountAmount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
                         </div>
                       )}
                       <div className="flex justify-between text-[#bfa9dc]">
                         <span>Subtotal Aplicado:</span>
-                        <span>USD ${subtotal.toFixed(2)}</span>
+                        <span>USD ${subtotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
                       </div>
                       <div className="flex justify-between text-[#bfa9dc]">
                         <span>IVA (15% Ecuador):</span>
-                        <span>USD ${taxAmount.toFixed(2)}</span>
+                        <span>USD ${taxAmount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
                       </div>
                       <div className="flex justify-between text-xs text-white pt-1 border-t border-white/5 font-semibold">
                         <span>Total del Servicio Contratado (100%):</span>
-                        <span className="text-white font-bold">USD ${grandTotal.toFixed(2)}</span>
+                        <span className="text-white font-bold">USD ${grandTotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
                       </div>
 
                       {activeModality === 'deposit_50' ? (
@@ -1284,13 +1284,13 @@ export const PricingCheckout: React.FC<PricingCheckoutProps> = ({
                           <div className="flex justify-between items-center text-emerald-300 font-bold text-sm">
                             <span>Abono Inicial a Pagar Hoy (50% + IVA):</span>
                             <span className="font-mono text-emerald-400 text-lg font-black">
-                              USD ${depositGrandTotal.toFixed(2)}
+                              USD ${depositGrandTotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                             </span>
                           </div>
                           <div className="flex justify-between items-center text-amber-300 font-semibold text-xs border-t border-white/10 pt-1.5">
                             <span>Saldo Pendiente (Contra Entrega / Finalización):</span>
                             <span className="font-mono text-amber-200 font-bold">
-                              USD ${pendingBalanceTotal.toFixed(2)}
+                              USD ${pendingBalanceTotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                             </span>
                           </div>
                           <p className="text-[10px] text-[#bfa9dc] italic pt-0.5">
@@ -1301,7 +1301,7 @@ export const PricingCheckout: React.FC<PricingCheckoutProps> = ({
                         <div className="flex justify-between text-base font-bold text-white pt-2 border-t border-white/10 font-sans">
                           <span>Total a Pagar Hoy:</span>
                           <span className="font-mono text-[#1ea1c2] text-xl font-extrabold">
-                            USD ${grandTotal.toFixed(2)}
+                            USD ${grandTotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                           </span>
                         </div>
                       )}

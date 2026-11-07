@@ -336,7 +336,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onAddToCart, s
                 <span>TECNOLOGÍA PROPIA ASEING</span>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-white">
-                App Web de Planificación y Control de Producción
+                App Web de Planificación y Control de Producción Product Track ASEING
               </h3>
               <p className="text-xs text-[#bfa9dc] leading-relaxed">
                 Elimine las planillas de papel. Nuestro software en la nube permite a su equipo registrar el avance de órdenes de fabricación, tiempos de parada y cumplimiento de pedidos desde cualquier dispositivo móvil o terminal de planta.
@@ -365,8 +365,8 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onAddToCart, s
                             )}
                             <span>
                               {selectedServiceIds.includes('app-planificacion')
-                                ? 'Compra Seleccionada ($4.300)'
-                                : '+ Comprar App ($4.300)'}
+                                ? 'Compra Seleccionada ($2,895.65)'
+                                : '+ Comprar App ($2,895.65)'}
                             </span>
                           </button>
                         )}

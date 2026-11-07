@@ -192,14 +192,14 @@ export const SERVICES_CATALOG: ServiceItem[] = [
   {
     id: 'app-planificacion',
     category: 'digital',
-    title: 'App de Planificación y Control de Producción (Compra de App)',
+    title: 'App Web de Planificación y Control de Producción Product Track ASEING (Compra de App)',
     shortDesc: 'Software ágil en la nube para control de órdenes de trabajo, inventarios y trazabilidad con propiedad definitiva.',
     fullDesc: 'Software ágil en la nube para control de órdenes de trabajo, inventarios y trazabilidad con propiedad definitiva. Permite a jefes de planta y operarios registrar avance por estación, alertar cuellos de botella en tiempo real y monitorear el cumplimiento de despacho desde cualquier celular o tablet.',
     modalidad: 'Pago Único',
-    price: 4300,
+    price: 2895.65,
     popular: true,
     savingsBadge: 'Tecnología Propia ASEING',
-    paymentCondition: 'Condición comercial: Adquisición de la App por valor de USD $4.300 (Pago Único). Opcionalmente cuenta con alternativa de Licencia mensual por USD $92 / mes por (3 usuarios).',
+    paymentCondition: 'Condición comercial: Adquisición de la App por valor base de USD $2,895.65 (Pago Único) + 15% IVA ($434.35), Total USD $3,330.00. Opcionalmente cuenta con alternativa de Licencia mensual por USD $92 / mes por (3 usuarios).',
     iconName: 'Smartphone',
     deliverables: [
       'Software ágil en la nube para control de órdenes de trabajo, inventarios y trazabilidad con propiedad definitiva',
@@ -214,13 +214,13 @@ export const SERVICES_CATALOG: ServiceItem[] = [
   {
     id: 'app-planificacion-mensual',
     category: 'digital',
-    title: 'App de Planificación y Control de Producción (Licencia Mensual)',
+    title: 'App Web de Planificación y Control de Producción Product Track ASEING (Licencia Mensual)',
     shortDesc: 'Suscripción mensual flexible para control digital de órdenes de trabajo y trazabilidad de planta.',
     fullDesc: 'Suscripción mensual flexible para control digital de órdenes de trabajo y trazabilidad de planta. Acceso corporativo en la nube bajo modalidad de licencia mensual para hasta 3 usuarios simultáneos con soporte y actualizaciones continuas.',
     modalidad: 'Licencia mensual',
     price: 92,
     savingsBadge: 'Tecnología Propia ASEING',
-    paymentCondition: 'Condición comercial: Licencia de USD $92 / mes por (3 usuarios) con soporte continuo. También disponible opción de Compra definitiva por USD $4.300.',
+    paymentCondition: 'Condición comercial: Licencia de USD $92 / mes por (3 usuarios) con soporte continuo. También disponible opción de Compra definitiva por USD $2,895.65.',
     iconName: 'Smartphone',
     deliverables: [
       'Suscripción mensual flexible para control digital de órdenes de trabajo y trazabilidad de planta',

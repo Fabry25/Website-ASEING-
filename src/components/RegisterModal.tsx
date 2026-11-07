@@ -864,8 +864,8 @@ export const RegisterModal: React.FC<RegisterModalProps> = ({
                     <option value="ISO 14001">ISO 14001:2026 (Gestión Ambiental)</option>
                     <option value="ISO 45001">ISO 45001:2018 (Seguridad y Salud SST)</option>
                     <option value="Paquete Trinorma">Paquete Trinorma Integrado (ISO 9001:2026 + 14001:2026 + 45001)</option>
-                    <option value="App Producción - Compra ($4.300)">App de Planificación y Control de Producción (Compra de App: USD $4.300)</option>
-                    <option value="App Producción - Licencia ($92/mes)">App de Planificación y Control de Producción (Licencia Mensual: USD $92/mes por 3 usuarios)</option>
+                    <option value="App Producción - Compra ($2,895.65)">App Web de Planificación y Control de Producción Product Track ASEING (Compra de App: USD $2,895.65)</option>
+                    <option value="App Producción - Licencia ($92/mes)">App Web de Planificación y Control de Producción Product Track ASEING (Licencia Mensual: USD $92/mes por 3 usuarios)</option>
                     <option value="Asesoría Inversión Financiera">Asesoría en Inversión en Mercados Financieros ($280 - Pago Único)</option>
                     <option value="Nipponflex">Sesión de Bienestar Laboral Nipponflex</option>
                   </select>
